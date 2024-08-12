@@ -7,7 +7,8 @@ export function spotifyLoginController(req, res) {
   const params = {
     response_type: 'code',
     client_id: SPOTIFY_CLIENT,
-    scope: 'user-read-private user-read-email user-library-read',
+    scope:
+      'user-read-private user-read-email user-library-read playlist-read-private playlist-read-collaborative',
     redirect_uri: REDIRECT_URL,
   };
 
